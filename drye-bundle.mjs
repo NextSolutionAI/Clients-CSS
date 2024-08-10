@@ -52939,7 +52939,7 @@
       ...F3,
     },
     kK =
-      "Space Grotesk, sans-serif",
+      "Nunito Sans, sans-serif",
     $3 = { 1: "13px", 2: "16px", 3: "18px" },
     H3 = { 1: 400, 2: 600 },
     j3 = { 1: "20px", 2: "22px", 3: "24px" },
@@ -53871,7 +53871,7 @@
       ({ image: e, ...t }) => Pe.jsx(h2, { ...t, src: e || void 0 }),
       { Base: h2 }
     ),
-    m2 = 364,
+    m2 = 246,
     X0 = Yr($r.CARD),
     v2 = Ut(X0("section"), {
       display: "inline-flex",
