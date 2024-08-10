@@ -196,6 +196,27 @@
   margin-left: 20px;
 }
 
+.c-iCDrnV .c-kfyIxT {
+  margin: 0px 0px 0px 25px;
+}
+
+.vfrc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  position: relative; 
+}
+
+.vfrc-header .vfrc-avatar {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); 
+  margin-left: 10px; 
+}
+
+
+
 .vfrc-card.c-jUajGf.vfrc-card--description {
   font-size: 14px;
   color: #000000;
