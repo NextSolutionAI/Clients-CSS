@@ -6,8 +6,8 @@
   animation: fadeInChat 1s ease-out;
 }
 
-.vfrc-assistant-info--title {
-  font-size: 20px;
+.vfrc-assistant-info.c-jJnANo {
+  display: none;
 }
 
 .vfrc-header {
@@ -71,7 +71,7 @@
 }
 
 .vfrc-launcher {
-  background: #EE1D52;
+  background: #ee1d52;
 }
 
 .c-bQoszf > img {
@@ -139,7 +139,7 @@
   margin: 0px;
   box-sizing: border-box;
   background-color: transparent;
-  color: #EE1D52;
+  color: #ee1d52;
   cursor: pointer;
   transition: background-color 50ms ease-in-out 0s,
     border-color 100ms ease-in-out 0s;
@@ -154,7 +154,7 @@
 }
 
 .c-bXTvXv.c-bXTvXv-lckiv-type-info {
-  background-color: #EE1D52;
+  background-color: #333333;
   color: #ffffff;
   margin-bottom: 8px;
   width: 100%;
@@ -163,7 +163,7 @@
 }
 
 .c-bXTvXv.c-bXTvXv-lckiv-type-info:hover {
-  background-color: #ee4f77;
+  background-color: #1a1a1a;
   color: #ffffff;
 }
 
@@ -185,7 +185,7 @@
   color: transparent;
 }
 
-.vfrc-card {
+.vfrc-system-response--list > .vfrc-card.c-jUajGf {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 3px 35px rgba(83, 83, 83, 0.13);
@@ -194,15 +194,10 @@
   width: 100%;
   max-width: 300px;
   padding: 31px;
-  text-align: center; 
+  text-align: center;
 }
 
-.c-PJLV-jJkrMz-mode-overlay {
-width: 248px;
-padding-left: 10px;
-}
-
-.vfrc-card--description {
+.vfrc-card.c-jUajGf.vfrc-card--description {
   font-size: 14px;
   color: #000000;
   text-align: center;
@@ -215,7 +210,7 @@ padding-left: 10px;
 }
 
 @media screen and (max-width: 767px) {
-  .c-bXTvXv.c-bXTvXv-lckiv-type-info {
+  .vfrc-card.c-jUajGf.vfrc-card--description {
     font-size: 12px;
   }
 }
