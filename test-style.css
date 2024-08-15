@@ -157,31 +157,22 @@
   font-weight: 700;
 }
 
-.vfrc-widget--launcher {
-  background-color: transparent;
+.vfrc-launcher {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border: #0000ff 4px solid;
+  animation: fadeIn 0.5s ease-in-out;
+  transition: transform 150ms ease 0s, opacity 150ms ease 0s !important;
+  box-shadow: #000000;
 }
 
-.vfrc-chat-input {
-  background-color: #160330;
+.vfrc-launcher:hover {
+  transform: scale(1.1);
+  opacity: 0.8; 
+  background-color: white;
 }
 
-.vfrc-widget--launcher {
-  background: transparent;
-  box-shadow: none;
-  border: none;
-}
-
-.vfrc-launcher.c-bQoszf {
-  background: transparent;
-  border: none;
-  box-shadow: none;
-}
-
-.vfrc-launcher img {
-  width: 120px;
-  height: 120px;
-  border-radius: 40px;
-}
 @keyframes fadeIn {
   from {
     opacity: 0;
