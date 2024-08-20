@@ -66,13 +66,26 @@
   margin-left: -1px;
 }
 
-.vfrc-launcher {
-  background: #ee1d52;
-}
-
 .c-bQoszf > img {
   width: 70px;
   height: 70px;
+}
+
+.vfrc-launcher {
+  background: #ee1d52;
+  animation: fadeIn 0.5s ease-in-out;
+  transition: transform 150ms ease 0s, opacity 150ms ease 0s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .vfrc-typing-indicator {
