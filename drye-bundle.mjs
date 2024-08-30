@@ -53506,17 +53506,17 @@
         {
           viewBox: "0 0 24 24",
           xmlns: "http://www.w3.org/2000/svg",
-          fill: "none",
-          stroke: "gray",
-          strokeWidth: "2",
-          strokeLinecap: "round",
-          strokeLinejoin: "round",
+          xmlnsXlink: "http://www.w3.org/1999/xlink",
           ...e,
         },
-        $e.createElement("path", {
-          d: "M21 12a9 9 0 1 1-3-6.7M21 3v6h-6",
-          fillRule: "evenodd",
-        })
+        $e.createElement(
+          "g",
+          { id: "vf-close", fill: "#666666", fillRule: "evenodd" },
+          $e.createElement("path", {
+            d: "M19,11H5a1,1,0,0,0,0,2H19a1,1,0,0,0,0-2Z",
+            fill: "#666666",
+          })
+        )
       ),
     KK = (e) =>
       $e.createElement(
@@ -53559,17 +53559,18 @@
         {
           viewBox: "0 0 24 24",
           xmlns: "http://www.w3.org/2000/svg",
-          xmlnsXlink: "http://www.w3.org/1999/xlink",
+          fill: "none",
+          stroke: "gray",
+          strokeWidth: "2",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
           ...e,
         },
-        $e.createElement(
-          "g",
-          { id: "vf-minus", fill: "#666666", fillRule: "evenodd" },
-          $e.createElement("path", {
-            d: "M19,11H5a1,1,0,0,0,0,2H19a1,1,0,0,0,0-2Z",
-            fill: "#666666",
-          })
-        )
+        $e.createElement("path", {
+          id: "vf-minus",
+          d: "M21 12a9 9 0 1 1-3-6.7M21 3v6h-6",
+          fillRule: "evenodd",
+        })
       ),
     ZK = (e) =>
       $e.createElement(
@@ -73823,10 +73824,10 @@
           var U;
           return ((U = q.render) == null ? void 0 : U.mode) === Ah.OVERLAY
             ? [
-                { svg: "minus", onClick: g },
-                { svg: "close", onClick: V },
+                { svg: "minus", onClick: V },
+                { svg: "close", onClick: g },
               ]
-            : [{ svg: "close", onClick: V }];
+            : [{ svg: "close", onClick: g }];
         }, [q.render, V, g]);
       return h
         ? Pe.jsx(_C, { children: Pe.jsx(V2, {}) })
@@ -73860,7 +73861,7 @@
               }),
               Pe.jsx(NE, {}),
               Pe.jsx(rE, {
-                accept: { label: "End Chat", type: "warn", onClick: cA(E, oe) },
+                accept: { label: "Restart Conversation", type: "warn", onClick: cA(E, oe) },
                 cancel: { label: "Cancel", onClick: oe },
               }),
             ],
