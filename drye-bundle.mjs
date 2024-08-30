@@ -73861,7 +73861,7 @@
               }),
               Pe.jsx(NE, {}),
               Pe.jsx(rE, {
-                accept: { label: "Restart Conversation", type: "warn", onClick: cA(E, oe) },
+                accept: { label: "Restart Conversation", type: "warn", onClick: cA(S, oe) },
                 cancel: { label: "Cancel", onClick: oe },
               }),
             ],
