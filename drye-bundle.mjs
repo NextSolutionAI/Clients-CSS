@@ -53560,7 +53560,7 @@
           viewBox: "0 0 24 24",
           xmlns: "http://www.w3.org/2000/svg",
           fill: "none",
-          stroke: "gray",
+          stroke: "#666666",
           strokeWidth: "2",
           strokeLinecap: "round",
           strokeLinejoin: "round",
@@ -55359,9 +55359,8 @@
       const t = new Date(e),
         n = t.getHours(),
         i = t.getMinutes();
-      return `${n % 12 || 12}:${i >= 10 ? "" : "0"}${i} ${
-        n >= 12 ? "pm" : "am"
-      }`;
+      const adjustedHour = n < 12 ? n : (n === 12 ? 12 : n); 
+      return `${adjustedHour < 10 ? "0" : ""}${adjustedHour}:${i < 10 ? "0" : ""}${i}`; 
     },
     KX = Yr($r.TIMESTAMP),
     rI = Ut(KX("div"), {
