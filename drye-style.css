@@ -1,17 +1,21 @@
 .voiceflow-chat {
   box-shadow: #000000;
 }
+
 .vfrc-widget--chat {
   animation: fadeInChat 1s ease-out;
 }
+
 .vfrc-header {
   background-color: #ffffff;
   border: none;
 }
+
 .vfrc-header--title {
   color: #000000fa;
   font-size: 16px;
 }
+
 .c-dzcdPv .vfrc-header--button {
   border: none;
   background: none;
@@ -23,6 +27,7 @@
   width: 32px;
   transition: all 100ms ease 0s;
 }
+
 .vfrc-header--button:nth-of-type(1) .vfrc-icon,
 .vfrc-header--button:nth-of-type(2) .vfrc-icon {
   width: 24px !important;
@@ -33,6 +38,7 @@
   background-size: contain;
   color: #f3f3f3;
 }
+
 .vfrc-chat-dialog {
   flex: 1 1 0px;
   overflow: hidden;
@@ -46,26 +52,31 @@
   transform: translateY(16px);
   animation: 400ms ease-out 150ms 1 normal forwards running cxARAE;
 }
+
 .c-fYYkXN {
   border-top-left-radius: 20px !important;
   border-bottom-left-radius: 20px !important;
   border: 1px solid #ccc;
 }
+
 .vfrc-chat-input--button {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   border: 1px solid #ccc;
   margin-left: -1px;
 }
+
 .c-bQoszf > img {
   width: 70px;
   height: 70px;
 }
+
 .vfrc-launcher {
   background: #ee1d52;
   animation: fadeIn 0.5s ease-in-out;
   transition: transform 150ms ease 0s, opacity 150ms ease 0s;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -76,12 +87,15 @@
     transform: translateY(0);
   }
 }
+
 .vfrc-typing-indicator {
   display: none;
 }
+
 .c-bXTvXv-lckiv-type-info {
   background-color: #002b45;
 }
+
 .c-bXTvXv-igaDqE-type-subtle {
   margin: 0px;
   border: 1px solid transparent;
@@ -100,18 +114,22 @@
   color: rgba(0, 0, 0, 0.85);
   transition: all 333ms ease-in-out 0s;
 }
+
 .vfrc-message {
   border-radius: 20px;
   font-weight: normal;
 }
+
 .c-PJLV-jueArD-from-system {
   background-color: #f3f3f3;
   color: #000000d9;
 }
+
 .c-PJLV-gJqBfM-from-user {
   background-color: #a8a8a8;
   color: rgb(255, 255, 255);
 }
+
 .vfrc-proactive-message {
   color: rgba(255, 255, 255, 0.81) !important;
   backdrop-filter: blur(38px) saturate(179%) !important;
@@ -119,6 +137,7 @@
   border-radius: 12px !important;
   border: 1px solid rgba(255, 255, 255, 0.24) !important;
 }
+
 .vfrc-button--secondary {
   display: inline-block;
   border: 1px solid #f1537a;
@@ -137,10 +156,12 @@
   text-align: left;
   font-size: 16px;
 }
+
 .vfrc-button--secondary:hover {
   background-color: rgba(0, 43, 69, 0.1);
   border-color: rgba(0, 43, 69, 0.7);
 }
+
 .c-bXTvXv.c-bXTvXv-lckiv-type-info {
   background-color: #333333;
   color: #ffffff;
@@ -149,13 +170,16 @@
   font-size: 14px;
   box-sizing: border-box;
 }
+
 .c-bXTvXv.c-bXTvXv-lckiv-type-info:hover {
   background-color: #1a1a1a;
   color: #ffffff;
 }
+
 .c-kIbiaN-iiTsXc-size-small.c-kIbiaN-igBpvik-css {
   display: none;
 }
+
 .c-dhzjXW {
   width: 24px !important;
   height: 24px !important;
@@ -165,9 +189,42 @@
   background-size: contain;
   color: #f3f3f3;
 }
-.vfrc-timestamp {
+
+::-webkit-scrollbar {
+  width: 5px;  
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;  
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8B8B8B;  
+  border-radius: 8px;  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;  
+}
+
+.c-kDxFae {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+  padding-bottom: var(--space-3);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.vfrc-system-response:has(.vfrc-card) .vfrc-timestamp  {
   color: transparent;
 }
+
+.vfrc-system-response:has(.vfrc-message--extension-CustomImage) .vfrc-timestamp  {
+  color: transparent;
+}
+
 .vfrc-system-response--list > .vfrc-card.c-jUajGf {
   background: #fff;
   border-radius: 10px;
@@ -178,18 +235,26 @@
   padding: 31px;
   text-align: center;
 }
+
+.vfrc-system-response:has(.out-of-hours-message) .vfrc-timestamp {
+  display: none;
+}
+
 .c-JFdmb .c-jUajGf:first-of-type {
   margin-left: 20px;
 }
+
 .c-iCDrnV .c-kfyIxT {
   margin: 0px 0px 0px 25px;
 }
+
 .vfrc-header {
   display: flex;
   align-items: center;
   justify-content: space-between; 
   position: relative; 
 }
+
 .vfrc-header .vfrc-avatar {
   position: absolute;
   left: 0;
@@ -197,19 +262,11 @@
   transform: translateY(-50%); 
   margin-left: 10px; 
 }
+
 .vfrc-card.c-jUajGf.vfrc-card--description {
   font-size: 14px;
   color: #000000;
   text-align: center;
-}
-
-.c-kDxFae {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    overflow: auto;
-    padding-bottom: var(--space-3);
-    overflow-x: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -220,6 +277,7 @@
     display: none;
   }  
 }
+
 @media screen and (max-width: 767px) {
   .vfrc-card.c-jUajGf.vfrc-card--description {
     font-size: 12px;
